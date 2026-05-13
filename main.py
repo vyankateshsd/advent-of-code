@@ -1,5 +1,9 @@
 import importlib
+from dotenv import load_dotenv
+
 from get_input import get_input
+
+load_dotenv()
 
 def solve(year: int, day: int):
     module = importlib.import_module(f"{year}.day{day}")

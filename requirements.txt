@@ -1,2 +1,3 @@
 requests
 importlib
+python-dotenv
