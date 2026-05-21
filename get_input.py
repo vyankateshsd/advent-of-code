@@ -7,4 +7,4 @@ def get_input(year: int, day: int) -> str:
     if session_cookie is None:
         raise Exception("AOC_COOKIE environment variable not set")
     response = requests.get(url, cookies={"session": session_cookie})
-    return response.text
+    return response.text.strip()
